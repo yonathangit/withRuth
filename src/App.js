@@ -8,7 +8,7 @@ import Login from "./components/login"
 import Register from "./components/register"
 import Courses from "./pages/Coursespage/Courses";
 import About from "./pages/Aboutpage/About";
-
+import ContactForm from "./pages/ContactUspage/ContactUs";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/contactForm" element={<ContactForm/>} />
        </Routes>
          <Footer />
       </Router>
