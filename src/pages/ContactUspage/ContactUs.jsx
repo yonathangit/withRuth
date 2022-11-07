@@ -1,44 +1,49 @@
 import React from "react";
+import './contactus.css';
 const ContactForm = () => {
 return( 
-<form
+<form  className="form"
     //   action={FORM_ENDPOINT}
     //   onSubmit={handleSubmit}
       method="POST"
       target="_blank"
     >
-      <div className="mb-3 pt-0">
-        <input
+        <h1>Feel free to contact us!!</h1>
+      <div className="">
+        Full Name  <input
           type="text"
           placeholder="Full Name"
           name="name"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="fullName"
           required
-        />
+        />   
       </div>
-      <div className="mb-3 pt-0">
-        <input
+      <br></br>
+      <br></br>
+      <div className="emailInput">
+        Email  <input
           type="email"
           placeholder="Email"
           name="email"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="emailHolder"
           required
         />
       </div>
-      <div className="mb-3 pt-0">
-        <textarea
+      <br></br>
+      <br></br>
+      <div className="messageInput">
+        Message <textarea
           placeholder="Your message"
           name="message"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="textArea"
           required
         />
       </div>
-      <div className="mb-3 pt-0">
-        <button
-          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-          type="submit"
-        >
-          Send a message
+
+      
+      <div className="for-submit">
+        <button className="btn" type="button">
+         Submit
         </button>
       </div>
     </form>
