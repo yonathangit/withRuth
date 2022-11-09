@@ -1,11 +1,13 @@
 import React from "react";
 import "./Footer.css";
-
+import { Link } from "react-router-dom";
+import { useState } from "react";
 const Footer = () => {
+  const [click, setClick] = useState(false);
   return (
     <>
       <footer>
-        <div className="container padding">
+        <div className="containerr padding">
           <div className="box logo">
             <div className="CompanyLogo">
               <a href="/">
@@ -51,6 +53,21 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div>
+            <nav className="flexSB">
+          <ul
+            className={click ? "mobile-nav" : "flexSB "}
+            onClick={() => setClick(false)}
+          >
+            
+            <li>
+              <Link to="/signupAdmin">SignUp for Admin</Link>
+            </li>
+          
+            </ul>
+            </nav>
+          </div>
+          
         </div>
       </footer>
       <div className="legal">

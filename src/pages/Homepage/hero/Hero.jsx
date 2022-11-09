@@ -18,7 +18,7 @@ const Hero = () => {
               DOT Ethiopia is a network of daring young social innovators who
               are creating opportunities and transforming communities.
             </p>
-             <div className="button">
+             <div >
                 <Button color="orange" radius="md" size="xl">
                   Get Started Now <i className="fa fa-long-arrow-alt-right"></i>
                 </Button>

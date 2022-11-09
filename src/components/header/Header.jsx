@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Head from "./Head";
 import "./Header.css";
 import { Modal, Button } from '@mantine/core';
+
+
+
 const Header = () => {
   const [click, setClick] = useState(false);
 
@@ -19,7 +22,7 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Coursespage">Courses</Link>
+              <Link to="/MyCourses">Courses</Link>
             </li>
             <li>
               <Link to="/Aboutpage">About Us</Link>
@@ -28,10 +31,10 @@ const Header = () => {
               <Link to="/contactus">Contact Us</Link>
             </li>
             <li>
-              <Link to="/Registrationpage">Register</Link>
+              <Link to="/register">Register</Link>
             </li>
             <li>
-              <Link to="/journal">Login </Link>
+              <Link to="/login">Login </Link>
             </li>
             
           </ul>

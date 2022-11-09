@@ -39,6 +39,11 @@ import AuthUser from './AuthUser';
 // }
 import { useState } from 'react';
 import { Modal,TextInput, Box, Button } from '@mantine/core';
+import Head from '../../components/header/Head';
+import Hero from '../Homepage/hero/Hero';
+import Testimonal from '../Testimonalpage/Testimonal';
+import AboutCard from '../Aboutpage/AboutCard';
+import CoursesCard from '../Coursespage/CoursesCard';
 export default function Login() {
         const {http,setToken} = AuthUser();
         const [email,setEmail] = useState();
@@ -50,8 +55,16 @@ export default function Login() {
                 setToken(res.data.user,res.data.access_token);
             })}
   const [opened, setOpened] = useState(true);
+
   return (
-    <>
+  
+  <>
+<Hero />
+  
+
+  <AboutCard />
+  <CoursesCard />
+  <Testimonal />
       <Modal
         opened={opened}
         onClose={() => setOpened(false)}

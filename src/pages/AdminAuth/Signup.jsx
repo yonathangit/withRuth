@@ -1,5 +1,4 @@
 import React from 'react';
-import AuthUser from './AuthUser';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Modal, Box, Button, TextInput, PasswordInput } from '@mantine/core';
@@ -7,9 +6,11 @@ import Hero from '../Homepage/hero/Hero';
 import Testimonal from '../Testimonalpage/Testimonal';
 import AboutCard from '../Aboutpage/AboutCard';
 import CoursesCard from '../Coursespage/CoursesCard';
-export default function Register() {
+import AuthAdmin from './AuthAdmin';
+import { Link } from 'react-router-dom';
+export default function SignupAdmin() {
         const navigate = useNavigate();
-        const {http, setToken} = AuthUser();
+        const {http, setToken} = AuthAdmin();
         const [firstname,setFirstname] = useState();
         const [lastname,setLastname] = useState();
         const [email,setEmail] = useState();
@@ -17,7 +18,7 @@ export default function Register() {
     
         const submitForm = () =>{
             // api call
-            http.post('/register',{firstname:firstname, lastname:lastname, email:email, password:password}).then((res)=>{
+            http.post('/signup',{firstname:firstname, lastname:lastname, email:email, password:password}).then((res)=>{
               navigate('/login')
           })
         }
@@ -62,6 +63,18 @@ export default function Register() {
         </Button>
         {/* <button type="button" onClick={submitForm} className="btn btn-primary mt-4">Login</button> */}
       {/* {submittedValues && <Code block>{submittedValues}</Code>} */}
+      <h4>already have an account </h4>
+      <button>
+        <nav>
+        
+        <li>
+              <Link to="/loginAdmin">Login</Link>
+            </li>
+      </nav>
+      </button>
+      
+      
+
     </Box>
         
       </Modal>
