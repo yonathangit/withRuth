@@ -7,6 +7,7 @@ import Heading from "../../components/heading/Heading"
 const MyCourses = () => {
   return (
     <>
+    
       <section className='online'>
         <div className='container'>
           <Heading subtitle='COURSES' title='Browse Our Online Courses' />
