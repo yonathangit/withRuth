@@ -6,7 +6,12 @@ import Testimonal from '../Testimonalpage/Testimonal';
 import AboutCard from '../Aboutpage/AboutCard';
 import CoursesCard from '../Coursespage/CoursesCard';
 import AuthAdmin from './AuthAdmin';
+import { useNavigate } from 'react-router-dom';
 export default function LoginAdmin() {
+  const navigate = useNavigate();
+  function handleClick () {
+    navigate("/")
+  }
         const {http,setToken} = AuthAdmin();
         const [email,setEmail] = useState();
         const [password,setPassword] = useState();

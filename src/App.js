@@ -1,7 +1,7 @@
 import "./App.css"
 import AuthUser from './pages/Authentication/AuthUser';
 import Header from "./components/header/Header"
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import Home from "./pages/Homepage/Home"
 import Footer from "./components/Footer/Footer";
 import Login from "./pages/Authentication/Login"
@@ -16,6 +16,7 @@ import SignupAdmin from "./pages/AdminAuth/Signup";
 function App() {
   return (
     <>
+    
       <Router>
         <Header />
         
@@ -27,7 +28,9 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/contactus" element={<ContactForm/>} />
         
-        <Route exact path="/loginAdmin" element={<LoginAdmin/>} />
+        <Route exact path="/loginAdmin" element={<LoginAdmin/>
+        ??
+        <Navigate to='/' replace/>} />
         <Route exact path="/signupAdmin" element={<SignupAdmin/>} />
        </Routes>
          <Footer />
