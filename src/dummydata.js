@@ -161,40 +161,40 @@ export const testimonal = [
 ]
 export const mycourses = [
   {
-    cover: "./images/courses/online/o1.png",
-    hoverCover: "./images/courses/online/o1.1.png",
+    cover: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fstartup.html&psig=AOvVaw0fR3t0yjFZ9qFmnB91OOg9&ust=1668765270185000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCHqJr5tPsCFQAAAAAdAAAAABAE",
+    hoverCover: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fstartup.html&psig=AOvVaw0fR3t0yjFZ9qFmnB91OOg9&ust=1668765270185000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCHqJr5tPsCFQAAAAAdAAAAABAE",
     courseName: "UI/UX Design Courses",
-    course: "25 Courses",
+    
   },
   {
     cover: "./images/courses/online/o2.png",
     hoverCover: "./images/courses/online/o2.1.png",
     courseName: "Art & Design",
-    course: "25 Courses",
+
   },
   {
     cover: "./images/courses/online/o3.png",
     hoverCover: "./images/courses/online/o3.1.png",
     courseName: "Computer Science",
-    course: "10 Courses",
+
   },
   {
     cover: "./images/courses/online/o4.png",
     hoverCover: "./images/courses/online/o4.1.png",
     courseName: "History & Archeologic",
-    course: "15 Courses",
+    
   },
   {
     cover: "./images/courses/online/o5.png",
     hoverCover: "./images/courses/online/o5.1.png",
     courseName: "Software Engineering",
-    course: "30 Courses",
+    
   },
   {
     cover: "./images/courses/online/o6.png",
     hoverCover: "./images/courses/online/o6.1.png",
     courseName: "Information Software",
-    course: "60 Courses",
+    
   },
   // {
   //   cover: "./images/courses/online/o7.png",

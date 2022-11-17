@@ -13,6 +13,7 @@ import MyCourses from "./pages/Coursespage/MyCourses";
 import Hero from "./pages/Homepage/hero/Hero";
 import LoginAdmin from "./pages/AdminAuth/Login";
 import SignupAdmin from "./pages/AdminAuth/Signup";
+import CourseDetail from "./pages/Coursespage/courseDetail";
 function App() {
   return (
     <>
@@ -27,11 +28,12 @@ function App() {
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/contactus" element={<ContactForm/>} />
+          <Route exact path="/courseDetail" element={<CourseDetail/>} />
         
         <Route exact path="/loginAdmin" element={<LoginAdmin/>
         ??
         <Navigate to='/' replace/>} />
-        <Route exact path="/signupAdmin" element={<SignupAdmin/>} />
+        <Route path="/signupAdmin" element={<SignupAdmin/>} />
        </Routes>
          <Footer />
       </Router>
